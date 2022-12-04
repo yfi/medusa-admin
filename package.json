@@ -98,13 +98,13 @@
     "vite": "^3.1.8"
   },
   "scripts": {
-    "dev": "vite --port 7000",
-    "develop": "npm run dev",
+    "dev": "vite --port 7000 --host",
+    "develop": "npm run dev --host",
     "check": "tsc",
     "build": "vite build",
     "preview": "vite preview --port 7000",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
-    "start": "npm run dev",
+    "start": "npm run dev --host",
     "serve": "npm run preview",
     "test": "echo \"Write tests! && exit 1",
     "storybook": "start-storybook -p 6006",
